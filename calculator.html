@@ -3,12 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Page Title</title>
+    <title>Calculator</title>
     <link rel="stylesheet" href="calculator.css">
+    <script src="https://kit.fontawesome.com/9865fe30cd.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <div id="headerWrapper">
     <h1>Calculator</h1>
     <h2>Solve Any Problem!</h2>
+    </div>
     <div id="outerCalculator">
         <input id="inputCalculator" readonly>
         <div id="buttonsCalculator">
@@ -30,6 +33,10 @@
             <button class="calcBtn" onclick="appendToDisplay('/')">/</button>
     </div>
     </div>
+    <footer id="footer">
+        <button id="backButton" onclick="location.href='index.html'">Go Back</button>
+        <button id="settingsButton"><i class="fa-solid fa-gear"></i></button>
+    </footer>
     <script src="calculator.js"></script>
 </body>
 </html>

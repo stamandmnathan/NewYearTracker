@@ -5,19 +5,26 @@ body{
 }
 
 h1{
-    font-size: 40px; 
+    font-size: 60px; 
+    margin-bottom: 0px; 
+    margin-top: 10px; 
 }
 
 h2{
-    font-size: 25px; 
+    font-size: 40px;
+    margin-top: 0;
 }
 
+#headerWrapper{
+    display: flex; 
+    flex-direction: column; 
+}
 #buttonsCalculator{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(4, 1fr);
-    gap: 20px;
-    width: 300px;    
+    gap: 30px;
+    width: 300px; 
 }
 
 #inputCalculator{
@@ -26,6 +33,7 @@ h2{
     border: 2px solid #ff9294;
     margin-top: 10px; 
     margin-bottom: 20px; 
+    margin-left: 70px; 
     color: #ff9294;   
     font-weight: bold; 
     font-size: 30px; 
@@ -33,18 +41,19 @@ h2{
 }
 
 #outerCalculator{
-    width: 600px; 
-    height: 570px; 
+    width: 500px; 
+    height: 560px; 
     margin-left: auto;
     margin-right: auto;
     display: flex;
-    flex-direction: column;
-    align-items: center; 
+    flex-direction: column; 
     background-color: #ffe5e5; 
     border: 2px solid #ff9294;
+    padding-left: 50px; 
 }
 
 .calcBtn{
+    font-family: "Anonymous Pro", monospace;
     background-color: #ff9294;
     color: #f9f9f9; 
     font-weight: bold;
@@ -54,7 +63,72 @@ h2{
     font-size: 30px; 
 }
 
-.calcBtn:hover{
+ #footer{ 
+    background-color: #f9f9f9;  
+    position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%; 
+   height: 90px; 
+   border-top: 4px solid #ff9294; 
+} 
+
+#backButton{
+    font-family: "Anonymous Pro", monospace;
+    background-color: #ff9294;
+    color: #f9f9f9;
+    font-weight: bold;
+    height: 50px;
+    width: 120px;
+    font-size: 20px;
+    border: 5px solid #ffe5e5;
+    position: fixed;
+    bottom: 20px;
+}
+
+#backButton:active{
+    height: 40px;
+    width: 115px; 
+    transition: 0.3s;
+}
+
+#settingsButton{
+    position: fixed;
+    bottom: 20px;
+    border-radius: 50%; 
+    height: 60px; 
+    width: 60px; 
+    color: #f9f9f9; 
+    font-size: 35px; 
+    background-color: #ff9294; 
+    border: 5px solid #ffe5e5; 
+
+}
+
+#settingsButton:active{
+    height: 58px;
+    width: 58px; 
+    transition: 0.3s; 
+}
+
+#backButton{
+    left: 20px;
+    font-size: 23px; 
+}
+
+#settingsButton{
+    right: 20px;
+}
+
+.calcBtn:hover,
+#backButton:hover,
+#settingsButton:hover{
+    cursor: pointer;
+    background-color: #ff6d70;
+    transition: 0.3s;
+}
+
+.calcBtn:hover, #backButton:hover{
     cursor: pointer; 
     background-color: #ff6d70; 
     transition: 0.3s; 
