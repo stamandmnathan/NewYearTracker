@@ -78,16 +78,16 @@ h2{
     background-color: #ff9294;
     color: #f9f9f9;
     font-weight: bold;
-    height: 50px;
+    height: 60px;
     width: 120px;
-    font-size: 20px;
+    font-size: 35px;
     border: 5px solid #ffe5e5;
     position: fixed;
     bottom: 20px;
 }
 
 #backButton:active{
-    height: 40px;
+    height: 50px;
     width: 115px; 
     transition: 0.3s;
 }
@@ -96,8 +96,8 @@ h2{
     position: fixed;
     bottom: 20px;
     border-radius: 50%; 
-    height: 60px; 
-    width: 60px; 
+    height: 65px; 
+    width: 65px; 
     color: #f9f9f9; 
     font-size: 35px; 
     background-color: #ff9294; 
@@ -106,8 +106,8 @@ h2{
 }
 
 #settingsButton:active{
-    height: 58px;
-    width: 58px; 
+    height: 60px;
+    width: 60px; 
     transition: 0.3s; 
 }
 
