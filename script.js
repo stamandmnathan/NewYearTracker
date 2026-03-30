@@ -12,7 +12,7 @@ const colorSelect = document.getElementById("colorSelect");
 
 const plannerCard = document.querySelector(".planner-card");
 const timerCircle = document.querySelector(".timer-circle");
-const allButtons = document.querySelectorAll(".menu-btn, .settings-btn, .shop-btn, .pause-btn, .play-btn");
+const allButtons = document.querySelectorAll(".menu-btn, .settings-btn, .shop-btn, .pause-btn, .play-btn, .calculatorBtn");
 
 let totalSeconds = 25 * 60;
 let timer = null;
