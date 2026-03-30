@@ -1,31 +1,47 @@
 body{
     font-family: "Anonymous Pro", monospace;
-    color: #ff9294; 
+    color: #ff9294;
+    background-color: #fffbf4; 
+}
+
+h1{
+    font-size: 40px; 
+}
+
+h2{
+    font-size: 25px; 
 }
 
 #buttonsCalculator{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(4, 1fr);
-    gap: 10px;
-    width: 300px;  
+    gap: 20px;
+    width: 300px;    
 }
 
 #inputCalculator{
-    width: 150px; 
-    height: 30px;
+    width: 300px; 
+    height: 50px;
     border: 2px solid #ff9294;
     margin-top: 10px; 
-    margin-bottom: 20px;   
+    margin-bottom: 20px; 
+    color: #ff9294;   
+    font-weight: bold; 
+    font-size: 30px; 
+    text-align: center; 
 }
+
 #outerCalculator{
-    width: 400px; 
-    height: 400px; 
+    width: 600px; 
+    height: 570px; 
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
     background-color: #ffe5e5; 
     border: 2px solid #ff9294;
-    /* display: flex;  
-    justify-content: center;
-    align-content: center;  */ 
 }
 
 .calcBtn{
@@ -33,10 +49,19 @@ body{
     color: #f9f9f9; 
     font-weight: bold;
     border: 5px solid #f9f9f9; 
-    height: 50px; 
-    font-size: 20px; 
+    height: 90px;
+    width: 90px;  
+    font-size: 30px; 
 }
 
 .calcBtn:hover{
     cursor: pointer; 
+    background-color: #ff6d70; 
+    transition: 0.3s; 
+}
+
+.calcBtn:active{
+    height: 85px;
+    width: 85px; 
+    transition: 0.3s; 
 }
