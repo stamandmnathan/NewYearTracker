@@ -1,0 +1,42 @@
+body{
+    font-family: "Anonymous Pro", monospace;
+    color: #ff9294; 
+}
+
+#buttonsCalculator{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 10px;
+    width: 300px;  
+}
+
+#inputCalculator{
+    width: 150px; 
+    height: 30px;
+    border: 2px solid #ff9294;
+    margin-top: 10px; 
+    margin-bottom: 20px;   
+}
+#outerCalculator{
+    width: 400px; 
+    height: 400px; 
+    background-color: #ffe5e5; 
+    border: 2px solid #ff9294;
+    /* display: flex;  
+    justify-content: center;
+    align-content: center;  */ 
+}
+
+.calcBtn{
+    background-color: #ff9294;
+    color: #f9f9f9; 
+    font-weight: bold;
+    border: 5px solid #f9f9f9; 
+    height: 50px; 
+    font-size: 20px; 
+}
+
+.calcBtn:hover{
+    cursor: pointer; 
+}
