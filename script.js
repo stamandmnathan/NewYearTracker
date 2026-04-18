@@ -17,6 +17,7 @@ const allButtons = document.querySelectorAll(".menu-btn, .settings-btn, .shop-bt
 let totalSeconds = 25 * 60;
 let timer = null;
 let isRunning = false;
+// let isDarkMod = false; 
 
 function updateDisplay() {
     const minutes = Math.floor(totalSeconds / 60);
